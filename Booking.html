@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rom Booking System</title>
+  <link rel="stylesheet" href="Booking.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Rom Booking System</h1>
+
+    <div class="controls">
+      <label for="roomSelect">Velg rom:</label>
+      <select id="roomSelect">
+        <option value="Rom 1">Rom 1</option>
+        <option value="Rom 2">Rom 2</option>
+        <option value="Rom 3">Rom 3</option>
+        <option value="Rom 4">Rom 4</option>
+      </select>
+
+      <label for="dateSelect">Velg dato:</label>
+      <input type="date" id="dateSelect">
+
+      <label for="durationSelect">Varighet:</label>
+      <select id="durationSelect">
+        <option value="1">1 time</option>
+        <option value="2">2 timer</option>
+      </select>
+    </div>
+
+    <h2>Velg time-slot</h2>
+    <div id="timeSlots" class="timeslots"></div>
+
+    <h2>Eksisterende Bookinger</h2>
+    <table id="bookings">
+      <thead>
+        <tr>
+          <th>Rom</th>
+          <th>Dato</th>
+          <th>Tid</th>
+          <th>Varighet</th>
+          <th>Avbestill</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="Booking.js"></script>
+</body>
+</html>
